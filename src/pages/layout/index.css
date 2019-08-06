@@ -1,0 +1,9 @@
+a.navs{
+	display: flex;
+	text-decoration: none;
+	color: #333;
+}
+
+a.current{
+	color: #3f51b5;
+}

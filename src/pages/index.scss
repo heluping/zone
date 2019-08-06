@@ -1,0 +1,27 @@
+@mixin bg($bg, $val: 1) {
+	&:nth-of-type(#{$val}){
+		background: $bg;
+	}
+}
+
+#home{
+	.home-ul{
+		width: 100%;
+		height: 100vh;
+		overflow: hidden;
+		ul{
+			transition: all .3s;
+		}
+		li{
+			height: 100vh;
+			@include bg($bg: #ba68c8);
+			@include bg(#3f51b5, 2);
+			@include bg(#f06292, 3);
+			font-size: 40px;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
